@@ -13,5 +13,30 @@ Wireshark is a widely used, open-source network protocol analyzer that enables u
 <br>
 <br>
 
+# About the pcap
+RedLine Stealer is information-stealing malware that harvests login credentials and sensitive data from a victim's Windows host. This Wireshark quiz uses a packet capture (pcap) that “crosses a line” separating normal traffic from malicious activity. The malicious activity in this pcap is a RedLine Stealer infection from July 2023. Reference if you will read more on the exercise [
+](https://unit42.paloaltonetworks.com/wireshark-quiz-redline-stealer/)
+
+## Scenario
+Traffic for this quiz occurred in an Active Directory (AD) environment during July 2023. Details of the local area network (LAN) environment for the pcap follow.
+
+Local Area Network (LAN) Details
+LAN segment range: 10.7.10[.]0/24 (10.7.10[.]1 through 10.7.10[.]255)
+Domain: coolweathercoat[.]com
+Domain controller IP address: 10.7.10[.]9
+Domain controller hostname: WIN-S3WT6LGQFVX
+LAN segment gateway: 10.7.10[.]1
+LAN segment broadcast address: 10.7.10[.]255
+
+## Quiz Questions
+What is the date and time in UTC the infection started?
+What is the IP address of the infected Windows client?
+What is the MAC address of the infected Windows client?
+What is the hostname of the infected Windows client?
+What is the user account name from the infected Windows host?
+What type of information did this RedLine Stealer try to steal?
+
 # Configurations 
-After installing wireshark i 
+The analysis was done on my virtual Kali machine 
+After installing Wireshark, I created a new profile "Updated" and customized the interface to optimize it for efficient analysis and maximize its functionality.
+<img width="1320" alt="Screenshot 2024-12-27 at 09 23 37" src="https://github.com/user-attachments/assets/abf33f7f-efba-4824-a508-358cc74242a2" />
