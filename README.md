@@ -19,21 +19,21 @@ RedLine Stealer is information-stealing malware that harvests login credentials 
 ## Scenario
 Traffic for this quiz occurred in an Active Directory (AD) environment during July 2023. Details of the local area network (LAN) environment for the pcap follow.
 
-Local Area Network (LAN) Details
-LAN segment range: 10.7.10[.]0/24 (10.7.10[.]1 through 10.7.10[.]255)
-Domain: coolweathercoat[.]com
-Domain controller IP address: 10.7.10[.]9
-Domain controller hostname: WIN-S3WT6LGQFVX
-LAN segment gateway: 10.7.10[.]1
-LAN segment broadcast address: 10.7.10[.]255
+Local Area Network (LAN) Details<br>
+LAN segment range: 10.7.10[.]0/24 (10.7.10[.]1 through 10.7.10[.]255)<br>
+Domain: coolweathercoat[.]com<br>
+Domain controller IP address: 10.7.10[.]9<br>
+Domain controller hostname: WIN-S3WT6LGQFVX<br>
+LAN segment gateway: 10.7.10[.]1<br>
+LAN segment broadcast address: 10.7.10[.]255<br>
 
 ## Quiz Questions
 What is the date and time in UTC the infection started?<br>
 What is the IP address of the infected Windows client?<br>
-What is the MAC address of the infected Windows client?
-What is the hostname of the infected Windows client?
-What is the user account name from the infected Windows host?
-What type of information did this RedLine Stealer try to steal?
+What is the MAC address of the infected Windows client?<br>
+What is the hostname of the infected Windows client?<br>
+What is the user account name from the infected Windows host?<br>
+What type of information did this RedLine Stealer try to steal?<br>
 
 # Configurations 
 The analysis was done on my virtual Kali machine 
