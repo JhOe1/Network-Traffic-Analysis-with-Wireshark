@@ -28,8 +28,8 @@ LAN segment gateway: 10.7.10[.]1
 LAN segment broadcast address: 10.7.10[.]255
 
 ## Quiz Questions
-What is the date and time in UTC the infection started?
-What is the IP address of the infected Windows client?
+What is the date and time in UTC the infection started?<br>
+What is the IP address of the infected Windows client?<br>
 What is the MAC address of the infected Windows client?
 What is the hostname of the infected Windows client?
 What is the user account name from the infected Windows host?
