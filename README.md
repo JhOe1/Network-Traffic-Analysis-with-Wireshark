@@ -14,8 +14,7 @@ Wireshark is a widely used, open-source network protocol analyzer that enables u
 <br>
 
 # About the pcap
-RedLine Stealer is information-stealing malware that harvests login credentials and sensitive data from a victim's Windows host. This Wireshark quiz uses a packet capture (pcap) that “crosses a line” separating normal traffic from malicious activity. The malicious activity in this pcap is a RedLine Stealer infection from July 2023. Reference if you will read more on the exercise [
-](https://unit42.paloaltonetworks.com/wireshark-quiz-redline-stealer/)
+RedLine Stealer is information-stealing malware that harvests login credentials and sensitive data from a victim's Windows host. This Wireshark quiz uses a packet capture (pcap) that “crosses a line” separating normal traffic from malicious activity. The malicious activity in this pcap is a RedLine Stealer infection from July 2023. Reference if you will read more on the exercise (https://unit42.paloaltonetworks.com/wireshark-quiz-redline-stealer/)
 
 ## Scenario
 Traffic for this quiz occurred in an Active Directory (AD) environment during July 2023. Details of the local area network (LAN) environment for the pcap follow.
