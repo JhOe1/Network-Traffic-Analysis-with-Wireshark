@@ -36,6 +36,36 @@ What is the user account name from the infected Windows host?<br>
 What type of information did this RedLine Stealer try to steal?<br>
 
 # Configurations 
-The analysis was done on my virtual Kali machine 
+The analysis was done on my Virtual Kali machine 
 After installing Wireshark, I created a new profile "Updated" and customized the interface to optimize it for efficient analysis and maximize its functionality.
 <img width="1320" alt="Screenshot 2024-12-27 at 09 23 37" src="https://github.com/user-attachments/assets/abf33f7f-efba-4824-a508-358cc74242a2" />
+
+
+I  created three filter expressions to help me investigate the pcaps effectively 
+
+1. Basic "(http.request or tls.handshake.type eq 1) and !(ssdp)"
+ This filter allowed me to:
+Capture HTTP requests and TLS "Client Hello" messages, which are crucial for analyzing web communication and secure connections.
+Exclude SSDP traffic, which is often irrelevant in web traffic analysis, ensuring a cleaner and more focused dataset.
+By using this filter, I was able to streamline my analysis and concentrate on packets directly related to web interactions.
+
+<img width="1317" alt="Screenshot 2024-12-28 at 10 45 19" src="https://github.com/user-attachments/assets/e3df012c-739f-413d-ac1f-3eea2c7baf7c" />
+
+
+<br>
+<br>
+<br>
+
+2. Basic+ "(http.request or tls.handshake.type eq 1 or tcp.flags eq 0x0002) and !(ssdp)"
+ This filter allowed me to:
+Captures TLS "Client Hello" packets, which are the initial messages in establishing secure TLS connections.
+Captures TCP packets with the SYN flag set. The SYN flag is used in the initial stage of the TCP three-way handshake, indicating the start of a new connection.
+Captures HTTP request packets, representing client requests to a server using the HTTP protocol.
+
+<img width="1316" alt="Screenshot 2024-12-28 at 11 42 44" src="https://github.com/user-attachments/assets/7460d6c5-ab2d-4b92-b0ed-c3a11852d91b" />
+
+<br>
+<br>
+<br>
+ 
+3. 
