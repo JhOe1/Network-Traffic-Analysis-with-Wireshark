@@ -94,8 +94,17 @@ Using the Basic filter I was able to get the IP address of the infected Windows 
 
 Using the `nbns` filter in Wireshark, which stands for NetBIOS Name Service, I was able to capture traffic that revealed both the system name "DESKTOP-9PEA63H" and the IP address of the machine "10.7.10.47". This is particularly useful for identifying devices on a network and mapping their names to their corresponding IP addresses.
 
-<br>
-<br>
-<br>
+
 <img width="1311" alt="Screenshot 2024-12-31 at 19 35 56" src="https://github.com/user-attachments/assets/48a7e17f-fe10-4466-85d8-fdf56e7529ef" />
+
+<br>
+<br>
+<br>
+
+By using the kerberos.CNameString filter in Wireshark, I was able to extract the Windows user account name from Kerberos authentication traffic. This filter captures the CNameString field, which contains the client's principal name (typically the username).
+<img width="1314" alt="Screenshot 2024-12-31 at 20 04 58" src="https://github.com/user-attachments/assets/67d72a40-64d1-43a4-8d36-069839f86033" />
+
+<br>
+<br>
+<br>
 
