@@ -71,7 +71,6 @@ I  created three filter expressions to help me investigate the pcaps effectively
 3. Basic+DNS "(http.request or tls.handshake.type eq 1 or tcp.flags eq 0x0002 or dns) and !(ssdp)"
   This filter allowed me to:
 * http.request: Captures HTTP request packets, useful for analyzing web traffic and client-server interactions.
-
 * tls.handshake.type eq 1: Captures TLS "Client Hello" messages, which are part of the secure handshake process for establishing HTTPS connections.
 
 * tcp.flags eq 0x0002: Captures TCP packets with the SYN flag set, indicating the initiation of a TCP handshake.
@@ -81,7 +80,12 @@ I  created three filter expressions to help me investigate the pcaps effectively
 
 
 
+Finally, I exported the configuration profile I created in Wireshark. This step ensures that when setting up Wireshark on another system, I can simply import the saved profile instead of configuring a new one from scratch, saving time and maintaining consistency in my analysis setup.
+<img width="1316" alt="Screenshot 2024-12-31 at 04 26 44" src="https://github.com/user-attachments/assets/fb03450f-dc1b-46db-97c8-707366048427" />
 
+# Analysis 
+Using the Basic filter I was able to get the IP address of the infected Windows client: 10.7.10.47, The MAC address:80:86:5b:ab:1e:c4 and the date and time in UTC the infection started:2023-07-10 22:39.
+<img width="1313" alt="Screenshot 2024-12-31 at 04 53 53" src="https://github.com/user-attachments/assets/6903ae33-d5e6-4a6e-9e43-f1d58de7d490" />
 
 
 
