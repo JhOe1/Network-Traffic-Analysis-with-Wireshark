@@ -68,4 +68,20 @@ I  created three filter expressions to help me investigate the pcaps effectively
 <br>
 <br>
  
-3. 
+3. Basic+DNS "(http.request or tls.handshake.type eq 1 or tcp.flags eq 0x0002 or dns) and !(ssdp)"
+  This filter allowed me to:
+* http.request: Captures HTTP request packets, useful for analyzing web traffic and client-server interactions.
+
+* tls.handshake.type eq 1: Captures TLS "Client Hello" messages, which are part of the secure handshake process for establishing HTTPS connections.
+
+* tcp.flags eq 0x0002: Captures TCP packets with the SYN flag set, indicating the initiation of a TCP handshake.
+
+* dns: Captures all DNS packets, including DNS queries and responses, which are vital for understanding name resolution in network activity (DNS traffic provides insights into which domains devices on the network are attempting to connect to. This information can help identify normal behaviour and detect anomalies).
+<img width="1313" alt="Screenshot 2024-12-31 at 04 09 07" src="https://github.com/user-attachments/assets/b8997091-55aa-4f60-aa4c-2479dddb2d73" />
+
+
+
+
+
+
+
