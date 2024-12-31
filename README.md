@@ -59,7 +59,7 @@ I  created three filter expressions to help me investigate the pcaps effectively
 2. Basic+ "(http.request or tls.handshake.type eq 1 or tcp.flags eq 0x0002) and !(ssdp)"
  This filter allowed me to:
 * Captures TLS "Client Hello" packets, which are the initial messages in establishing secure TLS connections.<br>
-* Captures TCP packets with the SYN flag set. The SYN flag is used in the initial stage of the TCP three-way handshake, indicating the start of a new connection.<br>
+* Captures TCP packets with the SYN flag set. The SYN flag is used in the initial stage of the TCP three-way handshake, indicating the start of a new connection ( With this I can detect all connections made ).<br>
 * Captures HTTP request packets, representing client requests to a server using the HTTP protocol.<br>
 
 <img width="1316" alt="Screenshot 2024-12-28 at 11 42 44" src="https://github.com/user-attachments/assets/7460d6c5-ab2d-4b92-b0ed-c3a11852d91b" />
