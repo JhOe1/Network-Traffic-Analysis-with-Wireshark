@@ -87,5 +87,15 @@ Finally, I exported the configuration profile I created in Wireshark. This step 
 Using the Basic filter I was able to get the IP address of the infected Windows client: 10.7.10.47, The MAC address:80:86:5b:ab:1e:c4 and the date and time in UTC the infection started:2023-07-10 22:39.
 <img width="1313" alt="Screenshot 2024-12-31 at 04 53 53" src="https://github.com/user-attachments/assets/6903ae33-d5e6-4a6e-9e43-f1d58de7d490" />
 
+<br>
+<br>
+<br>
 
+
+Using the `nbns` filter in Wireshark, which stands for NetBIOS Name Service, I was able to capture traffic that revealed both the system name "DESKTOP-9PEA63H" and the IP address of the machine "10.7.10.47". This is particularly useful for identifying devices on a network and mapping their names to their corresponding IP addresses.
+
+<br>
+<br>
+<br>
+<img width="1311" alt="Screenshot 2024-12-31 at 19 35 56" src="https://github.com/user-attachments/assets/48a7e17f-fe10-4466-85d8-fdf56e7529ef" />
 
