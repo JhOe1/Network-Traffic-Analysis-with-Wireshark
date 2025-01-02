@@ -120,4 +120,7 @@ When I followed the TCP stream I found out that the Redline Stlear was exfiltrat
 <img width="1309" alt="Screenshot 2025-01-02 at 19 51 23" src="https://github.com/user-attachments/assets/2a34be6d-f3f2-47e8-a518-ad6948b16f03" />
 
 
+ # Conclusion 
+Through this project, I gained valuable insights into network analysis using Wireshark. I learned how to apply advanced filtering techniques to isolate specific types of traffic, such as connection attempts, TLS handshakes, and HTTP requests, while effectively excluding irrelevant data. This experience enhanced my understanding of network protocols and improved my ability to identify and analyze suspicious or unusual traffic patterns.
+
 
