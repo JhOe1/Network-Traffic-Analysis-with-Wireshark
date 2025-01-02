@@ -108,3 +108,16 @@ By using the kerberos.CNameString filter in Wireshark, I was able to extract the
 <br>
 <br>
 
+Lastly, to get the information the RedLine Stealer was trying to steal, I used this filter "tcp.flags eq 0x0002 and !(tcp.port eq 443) and !(tcp.port eq 80) and !(ip.dst eq 10.7.10.0/24)" which exclude any web traffic over TCP port 80 and TCP port 443 and also filtered out traffic destined for the local subnet "10.7.10.0/24" to eliminate internal network activity.
+<img width="1309" alt="Screenshot 2025-01-02 at 19 45 43" src="https://github.com/user-attachments/assets/db3ae1d1-9937-43c6-8a09-5d05dcf0c3e5" />
+
+<br>
+<br>
+<br>
+
+When I followed the TCP stream I found out that the Redline Stlear was exfiltrating the user's data  
+
+<img width="1309" alt="Screenshot 2025-01-02 at 19 51 23" src="https://github.com/user-attachments/assets/2a34be6d-f3f2-47e8-a518-ad6948b16f03" />
+
+
+
